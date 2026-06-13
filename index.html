@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Md. Atiqur Rahman | Executive Portfolio & Systems Optimization Case</title>
+    <title>Md. Atiqur Rahman | Executive Portfolio & Production Systems Optimization</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- Chart.js CDN -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
-        /* Exact active border accent style from clean corporate layout architectures */
+        .gildan-navy { color: #0B2341; }
+        .gildan-bg-navy { background-color: #0B2341; }
         .tab-active {
             border-bottom: 3px solid #0056B3;
             color: #0056B3;
@@ -17,80 +18,77 @@
         }
     </style>
 </head>
-<body class="bg-white text-slate-800 font-sans antialiased min-h-screen flex flex-col">
+<body class="bg-[#F8FAFC] text-slate-800 font-sans antialiased min-h-screen flex flex-col">
 
-    <!-- Top Profile Masthead Section (Recreated exactly from image_16ed8d.png layout) -->
-    <header class="max-w-7xl mx-auto w-full px-4 sm:px-6 pt-10 pb-4 bg-white">
-        <div class="space-y-2">
-            <!-- Large Prominent Profile Identity Header -->
-            <h1 class="text-3xl sm:text-4xl font-black text-[#0B2341] tracking-tight">MD. ATIQUR RAHMAN</h1>
-            <!-- Core Subtitle Title String -->
-            <h2 class="text-sm sm:text-base text-[#0066CC] font-bold tracking-wider uppercase">OPERATIONS TECHNOLOGY & PRODUCTION SYSTEMS MANAGER</h2>
+    <!-- Header Block (Centrally Aligned mapping to image_166a9f.png requirements) -->
+    <header class="w-full px-4 sm:px-6 pt-12 pb-4 bg-white border-b border-slate-200">
+        <div class="max-w-4xl mx-auto flex flex-col items-center text-center space-y-4">
             
-            <!-- Exact Dash-Bordered Executive Key Metrics Box Row from Screenshot -->
-            <div class="border border-dashed border-slate-300 rounded-lg p-3 inline-flex flex-wrap gap-x-6 gap-y-2 text-xs text-slate-600 bg-slate-50/50 mt-3">
+            <!-- Executive Identity Area -->
+            <h1 class="text-3xl sm:text-4xl font-black text-[#0B2341] tracking-tight">MD. ATIQUR RAHMAN</h1>
+            <h2 class="text-xs sm:text-sm text-[#0056B3] font-bold tracking-wider uppercase">OPERATIONS TECHNOLOGY & PRODUCTION SYSTEMS MANAGER</h2>
+            
+            <!-- Dash-Bordered Key Performance Box Row -->
+            <div class="border border-dashed border-slate-300 rounded-lg p-3 inline-flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-slate-600 bg-[#F8FAFC]">
                 <div><span class="text-[#0B2341] font-black font-mono">$5.93M</span> Cumulative Revenue</div>
-                <div class="text-slate-300">|</div>
+                <div class="text-slate-300 hidden sm:inline">|</div>
                 <div><span class="text-[#0B2341] font-black font-mono">4+ Yrs</span> Operations Leadership</div>
-                <div class="text-slate-300">|</div>
+                <div class="text-slate-300 hidden sm:inline">|</div>
                 <div><span class="text-[#0B2341] font-black font-mono">15+</span> Scientific Publications</div>
             </div>
 
-            <!-- Contact Communications Row with Embedded Options Drawer -->
-            <div class="pt-4 flex flex-wrap items-center justify-between gap-y-4 gap-x-6 border-b border-slate-100 pb-6 text-xs font-mono">
-                <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
-                    <a href="mailto:atiqur.rahman.mim@gmail.com" class="text-slate-600 hover:text-[#0066CC] transition">✉ atiqur.rahman.mim@gmail.com</a>
-                    <span class="text-slate-300 hidden sm:inline">|</span>
-                    
-                    <!-- Directly Hyperlinked Direct Call & Message Link -->
+            <!-- Contact & System Action Command Row -->
+            <div class="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4 w-full text-xs font-mono border-b border-slate-100 pb-6">
+                <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
+                    <a href="mailto:atiqur.rahman.mim@gmail.com" class="text-slate-600 hover:text-[#0056B3] transition">✉ atiqur.rahman.mim@gmail.com</a>
+                    <span class="text-slate-300">|</span>
                     <a href="https://wa.me/8801716897917" target="_blank" class="text-emerald-600 hover:text-emerald-700 font-bold transition flex items-center gap-1">
-                        ☏ +8801716897917 <span class="text-[10px] font-normal text-slate-400 bg-slate-100 px-1.5 py-0.5 rounded border border-slate-200">(WhatsApp / Cell)</span>
+                        ☏ +8801716897917 <span class="text-[10px] font-normal text-slate-400">(WhatsApp / Cell)</span>
                     </a>
-                    <span class="text-slate-300 hidden sm:inline">|</span>
+                    <span class="text-slate-300">|</span>
                     <span class="text-slate-500">📍 Dinajpur, Bangladesh</span>
                 </div>
 
-                <!-- Global File & Link Dissemination Toggles -->
-                <div class="flex items-center gap-3">
-                    <button onclick="sharePortfolioLink()" class="flex items-center gap-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 px-3 py-1.5 rounded border border-slate-300 transition cursor-pointer relative active:scale-95">
+                <div class="flex items-center gap-3 mt-2 sm:mt-0">
+                    <button onclick="sharePortfolioLink()" class="flex items-center gap-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 px-3 py-1.5 rounded border border-slate-300 transition cursor-pointer relative active:scale-95 text-[11px]">
                         <span>Share Link</span>
                         <span id="shareAlert" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-[#0B2341] text-white text-[9px] px-2 py-0.5 rounded shadow-md hidden">Copied!</span>
                     </button>
-                    <a href="Md_Atiqur_Rahman_CV.pdf" download="Md_Atiqur_Rahman_CV.pdf" class="flex items-center gap-1.5 bg-[#0066CC] hover:bg-blue-700 text-white px-3 py-1.5 rounded font-bold transition shadow-xs active:scale-95">
+                    <a href="Md_Atiqur_Rahman_CV.pdf" download="Md_Atiqur_Rahman_CV.pdf" class="flex items-center gap-1.5 bg-[#0056B3] hover:bg-blue-700 text-white px-3 py-1.5 rounded font-bold transition shadow-xs active:scale-95 text-[11px]">
                         📥 Download CV Option
                     </a>
                 </div>
             </div>
 
-            <!-- Primary Navigation Switcher Architecture -->
-            <div class="flex font-mono text-xs sm:text-sm border-b border-slate-200 mt-6 bg-white">
-                <button id="tabBtnCv" onclick="switchTab('cv')" class="px-4 sm:px-6 py-3 transition duration-150 cursor-pointer tab-active tracking-wider uppercase">
+            <!-- Central Tab Component Swapper -->
+            <div class="flex font-mono text-xs sm:text-sm border-b border-slate-200 w-full justify-center pt-2">
+                <button id="tabBtnCv" onclick="switchTab('cv')" class="px-6 py-3 transition duration-150 cursor-pointer tab-active tracking-wider uppercase">
                     1. Interactive Executive CV
                 </button>
-                <button id="tabBtnAlignment" onclick="switchTab('alignment')" class="px-4 sm:px-6 py-3 text-slate-500 hover:text-slate-800 transition duration-150 cursor-pointer tracking-wider uppercase">
+                <button id="tabBtnAlignment" onclick="switchTab('alignment')" class="px-6 py-3 text-slate-500 hover:text-slate-800 transition duration-150 cursor-pointer tracking-wider uppercase">
                     2. Strategic Alignment Cases
                 </button>
             </div>
         </div>
     </header>
 
-    <!-- MAIN ACTIVE WORKSPACE INTERACTION CANVAS -->
-    <main class="max-w-7xl mx-auto w-full px-4 sm:px-6 py-8 flex-grow">
+    <!-- MAIN DASHBOARD CONTENT AREA -->
+    <main class="max-w-7xl mx-auto w-full px-4 sm:px-6 py-10 flex-grow">
 
         <!-- ==================== TAB 1: INTERACTIVE EXECUTIVE CV ==================== -->
-        <div id="contentCv" class="space-y-12">
+        <div id="contentCv" class="space-y-10">
             
-            <!-- Professional Summary Card -->
-            <div class="bg-slate-50 border border-slate-200 p-6 sm:p-8 rounded-xl space-y-3">
-                <h3 class="text-xs font-mono text-[#0066CC] uppercase font-bold tracking-widest">// Operational Strategy Thesis</h3>
+            <!-- Strategy Summary Card -->
+            <div class="bg-white border border-slate-200 p-6 sm:p-8 rounded-xl shadow-xs space-y-3">
+                <h3 class="text-xs font-mono text-[#0056B3] uppercase font-bold tracking-widest">// Operational Strategy Thesis</h3>
                 <p class="text-slate-700 leading-relaxed text-sm sm:text-base">
                     Large-scale corporate apparel manufacturing requires complete data synchronization between localized shop floors and central planning units. As an incoming Manufacturing Director stepping into a vertical operation, minimizing the lag between cutting, assembly, and tracking parameters is crucial. My technical background in Computer Science allows me to build stable tracking paths that reduce communication delays, prevent fulfillment bottlenecks, and optimize middle-management team bandwidth.
                 </p>
             </div>
 
-            <!-- Core Competencies Structural Block -->
+            <!-- Core Matrix Blocks -->
             <div class="space-y-4">
-                <h4 class="text-xs font-mono text-slate-400 uppercase tracking-wider font-bold">// Core Competencies Matrix</h4>
+                <h4 class="text-xs font-mono text-slate-400 uppercase tracking-wider font-bold">// Core Competencies Architecture</h4>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                     <div class="p-5 bg-white border border-slate-200 rounded-xl space-y-1.5 shadow-xs">
                         <h5 class="text-[#0B2341] font-bold text-sm">Production Architecture</h5>
@@ -111,20 +109,20 @@
                 </div>
             </div>
 
-            <!-- Professional Experience Timeline Timeline -->
+            <!-- Experience Segments -->
             <div class="space-y-6">
                 <h4 class="text-xs font-mono text-slate-400 uppercase tracking-wider font-bold">// Documented Professional Experience Pipeline</h4>
                 <div class="space-y-8 border-l-2 border-slate-200 ml-2 pl-6">
                     
                     <!-- Item 1 -->
-                    <div class="relative space-y-1.5">
-                        <div class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-[#0066CC] border-4 border-white"></div>
+                    <div class="relative space-y-1.5 bg-white p-5 rounded-xl border border-slate-200 shadow-xs">
+                        <div class="absolute -left-[39px] top-6 w-3 h-3 rounded-full bg-[#0056B3] border-4 border-white"></div>
                         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
                             <h5 class="text-base font-bold text-[#0B2341]">Production Lead</h5>
-                            <span class="text-xs font-mono text-[#0066CC] bg-blue-50 px-2.5 py-0.5 rounded border border-blue-100 font-bold w-fit">May 2022 - Present</span>
+                            <span class="text-xs font-mono text-[#0056B3] bg-blue-50 px-2.5 py-0.5 rounded border border-blue-100 font-bold w-fit">May 2022 - Present</span>
                         </div>
                         <p class="text-xs font-mono text-slate-500">The Collegiate Lineup LLC, Tampa, FL, USA (Remote)</p>
-                        <ul class="text-xs text-slate-600 space-y-1 pl-4 list-disc marker:text-slate-300 leading-relaxed">
+                        <ul class="text-xs text-slate-600 space-y-1.5 pl-4 list-disc marker:text-slate-300 leading-relaxed">
                             <li>Directly own the production planning, capacity scheduling, and procurement backbone for a high-volume US promotional apparel operator.</li>
                             <li>Executed 45.9% of total historical organizational output, driving $5.93M in verified cumulative revenue and $1.44M+ in net profit.</li>
                             <li>Designed and deployed automated reporting mechanisms and cloud-based workflow structures to synchronize data pipelines between vendor manufacturing facilities and fulfillment nodes.</li>
@@ -134,14 +132,14 @@
                     </div>
 
                     <!-- Item 2 -->
-                    <div class="relative space-y-1.5">
-                        <div class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-slate-400 border-4 border-white"></div>
+                    <div class="relative space-y-1.5 bg-white p-5 rounded-xl border border-slate-200 shadow-xs">
+                        <div class="absolute -left-[39px] top-6 w-3 h-3 rounded-full bg-slate-400 border-4 border-white"></div>
                         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
                             <h5 class="text-base font-bold text-[#0B2341]">Head of IT Department</h5>
                             <span class="text-xs font-mono text-slate-600 bg-slate-100 px-2 py-0.5 rounded border border-slate-200 w-fit">Mar 2019 - Jul 2022</span>
                         </div>
                         <p class="text-xs font-mono text-slate-500">Dhaka Central International Medical College Hospital, Dhaka, Bangladesh</p>
-                        <ul class="text-xs text-slate-600 space-y-1 pl-4 list-disc marker:text-slate-300 leading-relaxed">
+                        <ul class="text-xs text-slate-600 space-y-1.5 pl-4 list-disc marker:text-slate-300 leading-relaxed">
                             <li>Served as senior technology executive reporting directly to the Chairman, leading cross-functional technology strategies, privacy functions, and infrastructure deployment.</li>
                             <li>Structured and managed complex networks and enterprise software deployments across Pharmacies, Diagnostics, Logistics, and Administration.</li>
                             <li>Directed in-house engineering skill development and governed critical SLA matrices for high-value technology vendors.</li>
@@ -149,14 +147,14 @@
                     </div>
 
                     <!-- Item 3 -->
-                    <div class="relative space-y-1.5">
-                        <div class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-slate-400 border-4 border-white"></div>
+                    <div class="relative space-y-1.5 bg-white p-5 rounded-xl border border-slate-200 shadow-xs">
+                        <div class="absolute -left-[39px] top-6 w-3 h-3 rounded-full bg-slate-400 border-4 border-white"></div>
                         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
                             <h5 class="text-base font-bold text-[#0B2341]">Head of Operations</h5>
                             <span class="text-xs font-mono text-slate-600 bg-slate-100 px-2 py-0.5 rounded border border-slate-200 w-fit">Jul 2017 - Feb 2019</span>
                         </div>
                         <p class="text-xs font-mono text-slate-500">Innovative Trade, Dhaka, Bangladesh</p>
-                        <ul class="text-xs text-slate-600 space-y-1 pl-4 list-disc marker:text-slate-300 leading-relaxed">
+                        <ul class="text-xs text-slate-600 space-y-1.5 pl-4 list-disc marker:text-slate-300 leading-relaxed">
                             <li>Oversaw institutional finance operations, technical assets, regulatory compliance frameworks, and business development initiatives.</li>
                             <li>Successfully executed a USD $4.5M International Competitive Tender from Singapore, earning the organization's highest individual performance honor.</li>
                             <li>Designed and deployed internal operational policies and CRM tech stacks that modernized customer service response times and workforce productivity.</li>
@@ -164,14 +162,14 @@
                     </div>
 
                     <!-- Item 4 -->
-                    <div class="relative space-y-1.5">
-                        <div class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-slate-400 border-4 border-white"></div>
+                    <div class="relative space-y-1.5 bg-white p-5 rounded-xl border border-slate-200 shadow-xs">
+                        <div class="absolute -left-[39px] top-6 w-3 h-3 rounded-full bg-slate-400 border-4 border-white"></div>
                         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
-                            <h5 class="text-base font-bold text-[#0B2341]">Coordinator - Operations & Networks</h5>
+                            <h4 class="text-base font-bold text-[#0B2341]">Coordinator - Operations & Networks</h4>
                             <span class="text-xs font-mono text-slate-600 bg-slate-100 px-2 py-0.5 rounded border border-slate-200 w-fit">Aug 2014 - Jul 2017</span>
                         </div>
                         <p class="text-xs font-mono text-slate-500">Lexicon Merchandise, Dhaka, Bangladesh</p>
-                        <ul class="text-xs text-slate-600 space-y-1 pl-4 list-disc marker:text-slate-300 leading-relaxed">
+                        <ul class="text-xs text-slate-600 space-y-1.5 pl-4 list-disc marker:text-slate-300 leading-relaxed">
                             <li>Managed corporate procurement strategies, contract negotiations, and provider integration functions.</li>
                         </ul>
                     </div>
@@ -179,46 +177,44 @@
                 </div>
             </div>
 
-            <!-- Education and Research Cards Layout Grid -->
+            <!-- Double Bottom Blocks -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Education Track Card -->
-                <div class="p-6 bg-slate-50 border border-slate-200 rounded-xl space-y-4">
-                    <h4 class="text-xs font-mono text-[#0066CC] font-bold uppercase tracking-wider">// Formal Academic Framework</h4>
+                <div class="p-6 bg-white border border-slate-200 rounded-xl space-y-4 shadow-xs">
+                    <h4 class="text-xs font-mono text-[#0056B3] font-bold uppercase tracking-wider">// Formal Academic Framework</h4>
                     <div class="space-y-4 text-xs">
                         <div>
                             <h5 class="text-sm font-bold text-[#0B2341]">M.Sc. in Computer Science</h5>
                             <p class="text-slate-600">South Asian University (SAARC), New Delhi, India (2014)</p>
-                            <p class="text-[11px] text-[#0066CC] font-mono mt-1 font-bold">Awarded 100% Tuition-Waived SAARC Silver Jubilee Scholarship | Awarded Bangabandhu Fellowship in ICT by Ministry of ICT, Bangladesh</p>
+                            <p class="text-[11px] text-[#0056B3] font-mono mt-1 font-bold">Awarded 100% Tuition-Waived SAARC Silver Jubilee Scholarship | Awarded Bangabandhu Fellowship in ICT by Ministry of ICT, Bangladesh</p>
                         </div>
                         <div class="border-t border-slate-200 pt-3">
                             <h5 class="text-sm font-bold text-[#0B2341]">B.Sc. in Electronics & Telecommunication Engineering</h5>
                             <p class="text-slate-600">Daffodil International University, Dhaka (2012)</p>
                         </div>
-                        <div class="border-t border-slate-200 pt-3">
-                            <span class="text-[10px] text-slate-400 font-mono block font-bold">LANGUAGE PROFICIENCY REFERENCE</span>
-                            <span class="text-slate-700 font-bold">English (IELTS General Band 7.0 / CEFR C1) | Native Bangla</span>
+                        <div class="border-t border-slate-200 pt-3 font-sans">
+                            <span class="text-[10px] text-slate-400 font-mono block font-bold uppercase">Language Parameters</span>
+                            <span class="text-slate-700 font-bold text-xs">English (IELTS General Band 7.0 / CEFR C1) | Native Bangla</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Publications Analytics Card -->
-                <div class="p-6 bg-slate-50 border border-slate-200 rounded-xl flex flex-col justify-between">
+                <div class="p-6 bg-white border border-slate-200 rounded-xl flex flex-col justify-between shadow-xs">
                     <div>
-                        <h4 class="text-xs font-mono text-[#0066CC] font-bold uppercase tracking-wider">// Scientific Publications Framework</h4>
+                        <h4 class="text-xs font-mono text-[#0056B3] font-bold uppercase tracking-wider">// Scientific Publications Framework</h4>
                         <p class="text-xs text-slate-600 mt-2 leading-relaxed">
                             Author of <strong>15+ scientific publications</strong> in international journals focusing on Machine Learning structures, systems automation networks, image analysis logic, and structural cloud configurations.
                         </p>
                     </div>
                     <div class="grid grid-cols-3 gap-2 pt-4 border-t border-slate-200 text-center font-mono">
-                        <div class="bg-white p-2 rounded border border-slate-200 shadow-xs">
+                        <div class="bg-slate-50 p-2 rounded border border-slate-200">
                             <div class="text-base font-black text-slate-800">312</div>
                             <div class="text-[9px] text-slate-400 font-bold uppercase">Citations</div>
                         </div>
-                        <div class="bg-white p-2 rounded border border-slate-200 shadow-xs">
+                        <div class="bg-slate-50 p-2 rounded border border-slate-200">
                             <div class="text-base font-black text-blue-600">10</div>
                             <div class="text-[9px] text-slate-400 font-bold uppercase">h-index</div>
                         </div>
-                        <div class="bg-white p-2 rounded border border-slate-200 shadow-xs">
+                        <div class="bg-slate-50 p-2 rounded border border-slate-200">
                             <div class="text-base font-black text-sky-600">10</div>
                             <div class="text-[9px] text-slate-400 font-bold uppercase">i10-index</div>
                         </div>
@@ -228,25 +224,25 @@
 
         </div>
 
-        <!-- ==================== TAB 2: STRATEGIC VALUE ARCHITECTURE (SIMULATIONS) ==================== -->
-        <div id="contentAlignment" class="space-y-16 hidden">
+        <!-- ==================== TAB 2: STRATEGIC ALIGNMENT CASES ==================== -->
+        <div id="contentAlignment" class="space-y-12 hidden">
             
-            <!-- SIMULATION 1: PRODUCTION BUFFER MAPPER -->
-            <section class="bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-xs">
+            <!-- SIMULATION 1: PRODUCTION BUFFER MAPPER WITH EXTENDED PARAMETERS -->
+            <section class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-xs">
                 <div class="border-b border-slate-200 pb-4 mb-6">
-                    <span class="text-xs font-mono text-[#0066CC] uppercase tracking-wider font-bold">Simulation 01 // Production Timeline Management</span>
-                    <h3 class="text-xl font-bold text-[#0B2341] mt-1">Dyeing-to-Sewing Inventory Buffer Simulator</h3>
-                    <p class="text-xs text-slate-600 mt-1">Adjust upstream production processing variations against on-floor fabric stocks to calculate downstream sewing line continuity targets realistically.</p>
+                    <span class="text-xs font-mono text-[#0056B3] uppercase tracking-wider font-bold">Simulation 01 // Vertical Integration Flow Controls</span>
+                    <h3 class="text-xl font-bold text-[#0B2341] mt-1">Dyeing-to-Sewing Balance Engine</h3>
+                    <p class="text-xs text-slate-600 mt-1">Model the precise impact of processing or utility constraints on sewing layouts using realistic volume and targets.</p>
                 </div>
 
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                    <!-- Dynamic Controller Panel -->
-                    <div class="bg-white p-5 rounded-xl border border-slate-200 space-y-5 shadow-xs">
-                        <h4 class="text-xs font-mono text-slate-400 uppercase font-bold">// Planning Parameters</h4>
+                    <!-- Controls Column -->
+                    <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 space-y-5">
+                        <h4 class="text-xs font-mono text-slate-500 uppercase font-bold">// Production Metrics Inputs</h4>
                         
                         <div>
                             <div class="flex justify-between text-xs mb-1">
-                                <label class="text-slate-600">Dyeing Batch Lag</label>
+                                <label class="text-slate-600">Upstream Process Delay</label>
                                 <span class="text-blue-600 font-mono font-bold" id="outageVal">8 Hours</span>
                             </div>
                             <input type="range" id="outageSlider" min="0" max="24" value="8" class="w-full h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-blue-600">
@@ -254,124 +250,157 @@
 
                         <div>
                             <div class="flex justify-between text-xs mb-1">
-                                <label class="text-slate-600">Pre-Staged Fabric Stock</label>
+                                <label class="text-slate-600">Floor Fabric Safety Stock</label>
                                 <span class="text-sky-600 font-mono font-bold" id="bufferVal">1.0 Days</span>
                             </div>
                             <input type="range" id="bufferSlider" min="0.5" max="3" step="0.5" value="1" class="w-full h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-blue-600">
                         </div>
 
-                        <div class="pt-3 border-t border-slate-100">
-                            <button id="mitigateBtn" class="w-full bg-[#0066CC] hover:bg-blue-700 text-white font-mono text-xs py-2.5 px-4 rounded transition shadow-xs font-bold cursor-pointer active:scale-98">
+                        <div>
+                            <div class="flex justify-between text-xs mb-1">
+                                <label class="text-slate-600">Daily Targeted Line Run Vol</label>
+                                <span class="text-amber-600 font-mono font-bold" id="volumeVal">2,500 Doz</span>
+                            </div>
+                            <input type="range" id="volumeSlider" min="1000" max="5000" step="500" value="2500" class="w-full h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-blue-600">
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-xs mb-1">
+                                <label class="text-slate-600">Target Efficiency Constraint</label>
+                                <span class="text-indigo-600 font-mono font-bold" id="oeeTargetVal">70% OEE</span>
+                            </div>
+                            <input type="range" id="oeeTargetSlider" min="40" max="90" step="5" value="70" class="w-full h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-blue-600">
+                        </div>
+
+                        <div class="pt-3 border-t border-slate-200">
+                            <button id="mitigateBtn" class="w-full bg-[#0056B3] hover:bg-blue-700 text-white font-mono text-xs py-2.5 px-4 rounded transition shadow-xs font-bold cursor-pointer active:scale-98">
                                 Deploy Dynamic PPC Re-Routing Logic
                             </button>
                         </div>
                     </div>
 
-                    <!-- Live Informational Outputs Display -->
-                    <div class="lg:col-span-2 flex flex-col justify-between bg-white border border-slate-200 p-5 rounded-xl shadow-xs">
+                    <!-- Output Panel -->
+                    <div class="lg:col-span-2 flex flex-col justify-between bg-white border border-slate-200 p-5 rounded-xl">
                         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
                             <div class="bg-slate-50 p-3 rounded border border-slate-200">
-                                <span class="text-[10px] text-slate-400 font-mono block font-bold uppercase">Pipeline Integrity</span>
+                                <span class="text-[10px] text-slate-400 font-mono block font-bold uppercase">Layout Risk Level</span>
                                 <span id="statusBadge" class="inline-block mt-1 px-2 py-0.5 rounded text-[10px] font-mono font-bold uppercase tracking-wider"></span>
                             </div>
                             <div class="bg-slate-50 p-3 rounded border border-slate-200">
-                                <span class="text-[10px] text-slate-400 font-mono block font-bold uppercase">Sewing Lines Waiting</span>
-                                <span id="linesStarvedText" class="text-xl font-black text-slate-800 block mt-0.5">0 / 60</span>
+                                <span class="text-[10px] text-slate-400 font-mono block font-bold uppercase">Calculated Delay Hours</span>
+                                <span id="linesStarvedText" class="text-xl font-black text-slate-800 block mt-0.5">0.0 Hrs</span>
                             </div>
                             <div class="bg-slate-50 p-3 rounded border border-slate-200">
-                                <span class="text-[10px] text-slate-400 font-mono block font-bold uppercase">Throughput Risk Weight</span>
+                                <span class="text-[10px] text-slate-400 font-mono block font-bold uppercase">Backlog Weight Imbalance</span>
                                 <span id="financialLossText" class="text-xl font-black text-rose-600 block mt-0.5">$0</span>
                             </div>
                         </div>
 
-                        <div class="mt-4 bg-slate-50 p-3 rounded border border-slate-200 font-mono text-[11px] text-slate-600">
-                            <span class="text-slate-400 block border-b border-slate-200 pb-1 mb-1.5">// Standard Metric Log:</span>
-                            <p id="simulationLog">System standing ready. Move tracking parameters to review buffer interaction outputs.</p>
+                        <div class="mt-4 bg-slate-900 p-4 rounded border border-slate-800 font-mono text-[11px] text-slate-300">
+                            <span class="text-slate-500 block border-b border-slate-800 pb-1 mb-1.5">// Mathematical Continuity Outputs:</span>
+                            <p id="simulationLog">Modify the sliding controls on the left to verify active metric balances across vertical layers.</p>
                         </div>
                     </div>
                 </div>
             </section>
 
 
-            <!-- SIMULATION 2: EXCEPTION REGISTRATION MODULE -->
-            <section class="bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-xs">
+            <!-- SIMULATION 2: ADVANCED ACTIVE TABULAR FILTER INTERFACE -->
+            <section class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-xs">
                 <div class="border-b border-slate-200 pb-4 mb-6">
-                    <span class="text-xs font-mono text-[#0066CC] uppercase tracking-wider font-bold">Simulation 02 // Process Tracking Optimization</span>
-                    <h3 class="text-xl font-bold text-[#0B2341] mt-1">Automated Shop-Floor Exception Log Filter</h3>
-                    <p class="text-xs text-slate-600 mt-1">Select a simulated operational event threshold trigger to preview how software filters clean, specific indicators from large data streams.</p>
+                    <span class="text-xs font-mono text-[#0056B3] uppercase tracking-wider font-bold">Simulation 02 // Analytics Optimization</span>
+                    <h3 class="text-xl font-bold text-[#0B2341] mt-1">Shop-Floor Exception Parameter Logger</h3>
+                    <p class="text-xs text-slate-600 mt-1">Simulate actionable alert sorting. Select a specific operational exception parameter to output structured analytics dashboards.</p>
                 </div>
 
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                    <!-- Interactive Selection Toggles -->
-                    <div class="bg-white p-5 rounded-xl border border-slate-200 flex flex-col justify-between shadow-xs">
+                    <!-- Action List -->
+                    <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 flex flex-col justify-between">
                         <div class="space-y-2">
-                            <h4 class="text-xs font-mono text-slate-400 uppercase font-bold mb-2">// Select Testing Scenario</h4>
-                            <button onclick="generateBrief('efficiency')" class="w-full text-left bg-slate-50 hover:bg-slate-100 p-2.5 rounded border border-slate-200 text-xs font-mono transition cursor-pointer font-bold text-slate-700">
-                                🛑 Assembly Line OEE Drops Under 45%
+                            <h4 class="text-xs font-mono text-slate-400 uppercase font-bold mb-2">// Select Active Alert Parameter</h4>
+                            <button onclick="generateBrief('efficiency')" class="w-full text-left bg-white hover:bg-slate-100 p-3 rounded border border-slate-200 text-xs font-mono transition cursor-pointer font-bold text-slate-700 shadow-2xs">
+                                📊 OEE Variance Alert (Target Limit &lt;45%)
                             </button>
-                            <button onclick="generateBrief('shade')" class="w-full text-left bg-slate-50 hover:bg-slate-100 p-2.5 rounded border border-slate-200 text-xs font-mono transition cursor-pointer font-bold text-slate-700">
-                                ⚠️ Fabric Component Shade Deviation
+                            <button onclick="generateBrief('shade')" class="w-full text-left bg-white hover:bg-slate-100 p-3 rounded border border-slate-200 text-xs font-mono transition cursor-pointer font-bold text-slate-700 shadow-2xs">
+                                🧪 Material Shade Drift Boundary Exception
                             </button>
-                            <button onclick="generateBrief('transit')" class="w-full text-left bg-slate-50 hover:bg-slate-100 p-2.5 rounded border border-slate-200 text-xs font-mono transition cursor-pointer font-bold text-slate-700">
-                                🚚 Logistics Node Transit Delay Log
+                            <button onclick="generateBrief('transit')" class="w-full text-left bg-white hover:bg-slate-100 p-3 rounded border border-slate-200 text-xs font-mono transition cursor-pointer font-bold text-slate-700 shadow-2xs">
+                                🚛 Logistics Supply Route Variance Log
                             </button>
                         </div>
-                        <p class="text-[11px] text-slate-400 italic leading-relaxed pt-3 border-t border-slate-100 mt-4">
-                            *Note: Demonstrates explicit conditional reporting paths to reduce data noise for technical managers.
+                        <p class="text-[11px] text-slate-400 italic leading-relaxed pt-3 border-t border-slate-200 mt-4 font-sans">
+                            *Demonstrates clear conditional loops to extract operational variances from larger standard databases.
                         </p>
                     </div>
 
-                    <!-- Clean Log Output Canvas -->
-                    <div class="lg:col-span-2 bg-slate-50 rounded-xl p-5 border border-slate-200 font-mono text-[11px] min-h-[220px] flex flex-col justify-between shadow-xs">
-                        <div class="border-b border-slate-200 pb-2 mb-2 flex items-center justify-between text-slate-400 text-[10px]">
-                            <span>DATA FEED REGISTER: tracking_filter_module.output</span>
-                            <span class="text-blue-600 font-bold">STATUS: READY</span>
+                    <!-- Extended Output Interface -->
+                    <div class="lg:col-span-2 bg-[#0B2341] text-white rounded-xl p-5 font-mono text-[11px] min-h-[250px] flex flex-col justify-between border border-slate-900 shadow-md">
+                        <div class="border-b border-slate-800 pb-2 mb-2 flex items-center justify-between text-slate-400 text-[10px]">
+                            <span>DASHBOARD METRIC CONTAINER: parsing_engine_v2.out</span>
+                            <span class="text-emerald-400 font-bold">STATUS: RUNNING</span>
                         </div>
-                        <div class="space-y-3 text-slate-700 flex-grow pt-2" id="terminalOutput">
-                            <p class="text-slate-400 italic">// Click an alert event trigger on the left column to run the sample processing layout log block...</p>
+                        <div class="space-y-2 flex-grow pt-1 text-slate-200" id="terminalOutput">
+                            <p class="text-slate-400 italic">// Choose an evaluation log button from the configuration panel to output precise parameter blocks...</p>
                         </div>
                     </div>
                 </div>
             </section>
 
 
-            <!-- SIMULATION 3: RAMP-UP PARAMETER OPTIMIZER -->
-            <section class="bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-xs">
+            <!-- SIMULATION 3: COMPLEXITY-BASED LEARNING CURVE OPTIMIZER -->
+            <section class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-xs">
                 <div class="border-b border-slate-200 pb-4 mb-6">
-                    <span class="text-xs font-mono text-[#0066CC] uppercase tracking-wider font-bold">Simulation 03 // Production Training Standardization</span>
-                    <h3 class="text-xl font-bold text-[#0B2341] mt-1">SOP Deployment Learning Curve Framework</h3>
-                    <p class="text-xs text-slate-600 mt-1">Observe a practical model showing how using locked, clear visual guidelines stabilizes operator training speeds on active manufacturing layouts.</p>
+                    <span class="text-xs font-mono text-[#0056B3] uppercase tracking-wider font-bold">Simulation 03 // Balancing Optimization Models</span>
+                    <h3 class="text-xl font-bold text-[#0B2341] mt-1">SOP Ramp-Up Parameter Predictor</h3>
+                    <p class="text-xs text-slate-600 mt-1">Model efficiency progression lines by balancing operator onboarding across variable style complex profiles.</p>
                 </div>
 
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                    <!-- Graph Filter Configuration Panel -->
-                    <div class="bg-white p-5 rounded-xl border border-slate-200 space-y-4 shadow-xs">
-                        <h4 class="text-xs font-mono text-slate-400 uppercase font-bold">// Quality Guidelines Configuration</h4>
+                    <!-- Expanded Parameter Form Box -->
+                    <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 space-y-4">
+                        <h4 class="text-xs font-mono text-slate-400 uppercase font-bold">// Curve Parameters</h4>
                         
-                        <div class="p-3 bg-slate-50 rounded border border-slate-200">
+                        <div class="p-3 bg-white rounded border border-slate-200 shadow-2xs">
                             <label class="flex items-start gap-3 cursor-pointer">
-                                <input type="checkbox" id="sopCheckbox" checked class="mt-1 w-4 h-4 rounded border-slate-300 text-[#0066CC] focus:ring-blue-500">
+                                <input type="checkbox" id="sopCheckbox" checked class="mt-1 w-4 h-4 rounded border-slate-300 text-[#0056B3] focus:ring-blue-500">
                                 <div>
                                     <span class="text-xs font-bold text-slate-700 block">Deploy Media SOP Assemblies</span>
-                                    <span class="text-[11px] text-slate-500 block mt-0.5">Applies structured media tracking materials (Notion/Loom configurations) to production line tracks.</span>
+                                    <span class="text-[11px] text-slate-500 block mt-0.5">Integrates clear visual steps (Notion/Loom controls) to standardize run paths.</span>
                                 </div>
                             </label>
                         </div>
 
-                        <div class="space-y-1.5 font-mono text-[11px] bg-slate-50 p-3 rounded border border-slate-200 text-slate-600">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-600 mb-1">Batch Style Complexity</label>
+                            <select id="complexitySelect" class="w-full bg-white border border-slate-200 rounded p-2 text-xs font-mono text-slate-700 outline-none">
+                                <option value="1.0">Basic Jersey Tops (Standard)</option>
+                                <option value="1.25" selected>Semi-Engineered Technical Wear</option>
+                                <option value="1.5">Fully Engineered Performance Wear</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-xs mb-1">
+                                <label class="text-slate-600">Base Operator Skill Mix</label>
+                                <span class="text-blue-600 font-mono font-bold" id="skillVal">75% Skilled</span>
+                            </div>
+                            <input type="range" id="skillSlider" min="50" max="95" step="5" value="75" class="w-full h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-blue-600">
+                        </div>
+
+                        <div class="space-y-1.5 font-mono text-[11px] bg-white p-3 rounded border border-slate-200 text-slate-600 shadow-2xs">
                             <div class="flex justify-between">
-                                <span>Days to Target OEE:</span>
-                                <span id="daysToTarget" class="text-blue-600 font-bold">14 Days</span>
+                                <span>Days to Efficiency Target:</span>
+                                <span id="daysToTarget" class="text-[#0056B3] font-bold">14 Days</span>
                             </div>
                             <div class="flex justify-between">
-                                <span>Output Incline:</span>
+                                <span>Variance Shift:</span>
                                 <span id="efficiencyDelta" class="text-emerald-600 font-bold">+18% vs Baseline</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Chart Canvas Rendering Layout Box -->
-                    <div class="lg:col-span-2 bg-white border border-slate-200 p-4 rounded-xl flex items-center justify-center min-h-[300px] shadow-xs">
+                    <!-- Chart Grid Wrapper Box -->
+                    <div class="lg:col-span-2 bg-white border border-slate-200 p-4 rounded-xl flex items-center justify-center min-h-[300px]">
                         <div class="w-full h-64 sm:h-72 relative">
                             <canvas id="learningCurveChart"></canvas>
                         </div>
@@ -383,9 +412,13 @@
 
     </main>
 
-    <!-- RUNTIME DATA ARCHITECTURE LOGIC CODE ENGINE -->
+    <footer class="border-t border-slate-200 bg-white py-6 px-6 text-center text-xs font-mono text-slate-400">
+        Operational Analysis Layout Framework // Md. Atiqur Rahman // 2026
+    </footer>
+
+    <!-- RUNTIME LOGIC CODE ENGINE -->
     <script>
-        // --- PORTFOLIO ACTION MANAGEMENT FRAMEWORK ---
+        // --- DATA VISIBILITY ACTION SYSTEMS ---
         function sharePortfolioLink() {
             const shareData = {
                 title: 'Md. Atiqur Rahman Portfolio',
@@ -395,105 +428,100 @@
             const alertBox = document.getElementById('shareAlert');
 
             if (navigator.share) {
-                navigator.share(shareData).catch((err) => console.log('Share error:', err));
+                navigator.share(shareData).catch((err) => console.log(shareError));
             } else {
                 navigator.clipboard.writeText(window.location.href)
                     .then(() => {
                         alertBox.classList.remove('hidden');
                         setTimeout(() => alertBox.classList.add('hidden'), 2000);
                     })
-                    .catch(err => console.error('Clipboard fault: ', err));
+                    .catch(err => console.log(err));
             }
         }
 
-        // --- TABBED WORKSPACE NAVIGATION SWAP LOGIC ---
+        // --- DASHBOARD NAVIGATION CONTROLLER SWITCHES ---
         function switchTab(target) {
             const btnCv = document.getElementById('tabBtnCv');
             const btnAlignment = document.getElementById('tabBtnAlignment');
             const contentCv = document.getElementById('contentCv');
             const contentAlignment = document.getElementById('contentAlignment');
-            const hTitle = document.getElementById('headerTitle');
-            const hSub = document.getElementById('headerSub');
 
             if (target === 'cv') {
                 btnCv.classList.add('tab-active');
                 btnCv.classList.remove('text-slate-500');
                 btnAlignment.classList.remove('tab-active');
                 btnAlignment.classList.add('text-slate-500');
-                
                 contentCv.classList.remove('hidden');
                 contentAlignment.classList.add('hidden');
-
-                hTitle.innerText = "Data Integration & Systems Optimization Profile";
-                hSub.innerText = "Large-scale apparel manufacturing requires complete data synchronization between localized shop floors and central planning units. As an incoming Manufacturing Director stepping into a vertical operation, minimizing the lag between cutting, assembly, and tracking parameters is crucial. My technical background in Computer Science allows me to build stable tracking paths that reduce communication delays, prevent fulfillment bottlenecks, and optimize middle-management team bandwidth.";
             } else {
                 btnAlignment.classList.add('tab-active');
                 btnAlignment.classList.remove('text-slate-500');
                 btnCv.classList.remove('tab-active');
                 btnCv.classList.add('text-slate-500');
-                
                 contentAlignment.classList.remove('hidden');
                 contentCv.classList.add('hidden');
-
-                hTitle.innerText = "Gildan G.A.B. Limited: Operational Alignment Simulation Models";
-                hSub.innerText = "Simplified, deterministic data tracking tools showing how centralized production parameters can absorb assembly lags, optimize material layouts, and stabilize plant KPIs.";
                 
-                // Force Chart layout constraints adjustment immediately upon tab visibility activation
                 setTimeout(() => { if (learningChart) { learningChart.resize(); } }, 50);
             }
         }
 
-        // --- SIMULATION 1 ENGINE: SIMPLE MATHEMATIC FLOW ---
+        // --- SIMULATION 01 CONTROLS LOGIC FRAMEWORK ---
         const outageSlider = document.getElementById('outageSlider');
         const bufferSlider = document.getElementById('bufferSlider');
+        const volumeSlider = document.getElementById('volumeSlider');
+        const oeeTargetSlider = document.getElementById('oeeTargetSlider');
         const mitBtn = document.getElementById('mitigateBtn');
         let dynamicPPCActive = false;
 
         function updateSimulationOne() {
             const outage = parseInt(outageSlider.value);
             const buffer = parseFloat(bufferSlider.value);
+            const volume = parseInt(volumeSlider.value);
+            const oeeTarget = parseInt(oeeTargetSlider.value);
             
             document.getElementById('outageVal').innerText = `${outage} Hours`;
             document.getElementById('bufferVal').innerText = `${buffer.toFixed(1)} Days`;
+            document.getElementById('volumeVal').innerText = `${volume.toLocaleString()} Doz`;
+            document.getElementById('oeeTargetVal').innerText = `${oeeTarget}% OEE`;
 
             const hoursOfBuffer = buffer * 24;
             const effectiveOutage = dynamicPPCActive ? Math.max(0, outage - 6) : outage; 
 
-            let linesStarved = 0;
-            let loss = 0;
-            let status = "OPTIMAL BUFFER";
+            let totalDelayHours = 0;
+            let financialRisk = 0;
+            let status = "BALANCED MARGIN";
             let statusClass = "bg-emerald-50 text-emerald-700 border border-emerald-200";
             let logMsg = "";
 
             if (effectiveOutage <= hoursOfBuffer) {
-                linesStarved = 0;
-                loss = 0;
-                status = "OPTIMAL BALANCE";
+                totalDelayHours = 0;
+                financialRisk = 0;
+                status = "OPTIMAL BUFFER";
                 statusClass = "bg-emerald-50 text-emerald-700 border border-emerald-200";
-                logMsg = `[OK] Pre-staged fabric inventory levels (${hoursOfBuffer} hours) successfully covered the temporary ${outage}-hour processing delay. Downstream line scheduling balance maintained.`;
+                logMsg = `[OK] Pre-staged material inventory safety levels (${hoursOfBuffer} hours) successfully covered the calculated ${outage}-hour processing delay. Production run layout metrics remain balanced.`;
             } else {
-                const deficitHours = effectiveOutage - hoursOfBuffer;
-                linesStarved = Math.min(60, Math.round(deficitHours * 4.5));
-                loss = Math.round(linesStarved * deficitHours * 150);
+                totalDelayHours = effectiveOutage - hoursOfBuffer;
+                // Risk maps directly to volume capacity, target efficiency, and delay duration
+                financialRisk = Math.round((volume / 24) * totalDelayHours * (oeeTarget / 100) * 14.5);
                 
-                if (linesStarved > 30) {
-                    status = "RUN-OUT DETECTED";
+                if (totalDelayHours > 6) {
+                    status = "HIGH LATENCY BREAKOUT";
                     statusClass = "bg-rose-50 text-rose-700 border border-rose-200";
                 } else {
-                    status = "BUFFER LIMIT BREACH";
+                    status = "BUFFER DEFICIT WARNING";
                     statusClass = "bg-amber-50 text-amber-700 border border-amber-200";
                 }
-                logMsg = `[ALERT] Manufacturing delay exceeded existing material stock limits by ${deficitHours.toFixed(1)} hours. Approximately ${linesStarved} out of 60 operational layout runs logged component wait time. Estimated baseline tracking risk parameter value: $${loss.toLocaleString()}.`;
+                logMsg = `[ALERT] Production timeline variance exceeded stock parameters by ${totalDelayHours.toFixed(1)} hours. At a targeted running metric of ${oeeTarget}% OEE and a scheduling layer load of ${volume.toLocaleString()} Doz/day, modeled risk output calculates to $${financialRisk.toLocaleString()}.`;
             }
 
             if (dynamicPPCActive) {
-                logMsg += " (Dynamic alignment active: open matching component specifications shifted to alternative runs to protect operator output continuity metrics).";
+                logMsg += " (Dynamic optimization layer active: matching inventory blocks shifted to alternative open modules to prevent layout downtime).";
             }
 
             document.getElementById('statusBadge').innerText = status;
             document.getElementById('statusBadge').className = `inline-block mt-1 px-2 py-0.5 rounded text-[10px] font-mono font-bold uppercase tracking-wider ${statusClass}`;
-            document.getElementById('linesStarvedText').innerText = `${linesStarved} / 60`;
-            document.getElementById('financialLossText').innerText = `$${loss.toLocaleString()}`;
+            document.getElementById('linesStarvedText').innerText = `${totalDelayHours.toFixed(1)} Hours`;
+            document.getElementById('financialLossText').innerText = `$${financialRisk.toLocaleString()}`;
             document.getElementById('simulationLog').innerText = logMsg;
         }
 
@@ -502,50 +530,52 @@
             mitBtn.innerText = dynamicPPCActive ? "Disable Buffer Re-Routing Logic" : "Deploy Dynamic PPC Re-Routing Logic";
             mitBtn.className = dynamicPPCActive 
                 ? "w-full bg-slate-700 hover:bg-slate-800 text-white font-mono text-xs py-2.5 px-4 rounded transition shadow-xs font-bold cursor-pointer active:scale-98"
-                : "w-full bg-[#0066CC] hover:bg-blue-700 text-white font-mono text-xs py-2.5 px-4 rounded transition shadow-xs font-bold cursor-pointer active:scale-98";
+                : "w-full bg-[#0056B3] hover:bg-blue-700 text-white font-mono text-xs py-2.5 px-4 rounded transition shadow-xs font-bold cursor-pointer active:scale-98";
             updateSimulationOne();
         });
 
         outageSlider.addEventListener('input', updateSimulationOne);
         bufferSlider.addEventListener('input', updateSimulationOne);
+        volumeSlider.addEventListener('input', updateSimulationOne);
+        oeeTargetSlider.addEventListener('input', updateSimulationOne);
 
 
-        // --- SIMULATION 2 ENGINE: RAW METRIC FILTER SIMULATORS ---
+        // --- SIMULATION 02 ENGINE: SORTING ALERTS LOGIC ---
         function generateBrief(type) {
             const term = document.getElementById('terminalOutput');
-            term.innerHTML = '<p class="text-slate-400">// Parsing tracking metrics... Formatting exception data parameters...</p>';
+            term.innerHTML = '<p class="text-slate-400">// Querying dataset variables... Formatting target parameter outputs...</p>';
             
             setTimeout(() => {
                 let report = "";
                 if (type === 'efficiency') {
                     report = `
-<p class="text-rose-600 font-bold">[EXCEPTION CAPTURED] -> SEGMENT LAYOUT ID: LINE 14</p>
-<p class="text-slate-700"><span class="font-bold text-[#0B2341]">Parameter Check:</span> Line output level dropped to 41.2% (System logging condition limit flag: &lt;45.0%).</p>
-<p class="text-slate-600"><span class="font-bold text-[#0B2341]">Variable Isolated:</span> Setup balance metrics show micro-latencies during component stitching sequences.</p>
-<p class="text-blue-700 font-bold mt-2">// System Tracking Output Actions Summary:</p>
-<p class="text-slate-600">   1. Alert notification packet routed immediately to localized line tracking panels.<br>
-   2. Compiles historical layout balance dataset to isolate specific target execution parameters.<br>
-   3. Switches reporting refresh frequency to short-cycle intervals to monitor line stability data before shift close.</p>
+<p class="text-rose-400 font-bold">[METRIC THRESHOLD EXCEPTION RECORDED] // SEGMENT LOCATION: CORE MODULE 14</p>
+<p class="text-slate-300">-> Variance Parameters: Active layout efficiency dropped to 41.2% vs baseline configuration requirement rules (&lt;45.0% OEE).</p>
+<p class="text-slate-300">-> Tracking Point Diagnostics: Layout assembly cycle validation log indicates specific micro-latencies during layout feeding sequences.</p>
+<p class="text-emerald-400 font-bold mt-2">// Automated System Tracking Actions Generated:</p>
+<p class="text-slate-200">   1. Outbound alert telemetry dispatched to designated assembly floor interface cards.<br>
+   2. Isolates relevant baseline historical layout dataset arrays to evaluate balance configurations.<br>
+   3. Readjusts performance logging update sequences to short-cycle intervals to monitor line stability data paths.</p>
                     `;
                 } else if (type === 'shade') {
                     report = `
-<p class="text-amber-600 font-bold">[EXCEPTION CAPTURED] -> LIQUOR INPUT ID: BATCH 03</p>
-<p class="text-slate-700"><span class="font-bold text-[#0B2341]">Parameter Check:</span> Metric tracking registers shade reading variation slightly outside baseline color configuration limits.</p>
-<p class="text-slate-600"><span class="font-bold text-[#0B2341]">Variable Isolated:</span> Processing chemical compound metrics require verification prior to next finishing step sequences.</p>
-<p class="text-blue-700 font-bold mt-2">// System Tracking Output Actions Summary:</p>
-<p class="text-slate-600">   1. Automatically assigns temporary data hold indicator flag to upcoming component loading queues.<br>
-   2. Formats targeted formulation balancing data directly from raw spectrophotometer analysis records.<br>
-   3. Readjusts matching material tracking queues to route pre-approved rolls first, stabilizing assembly continuity parameters.</p>
+<p class="text-amber-400 font-bold">[METRIC THRESHOLD EXCEPTION RECORDED] // PROCESSING NODE: BATCH RUN 03</p>
+<p class="text-slate-300">-> Variance Parameters: Colorimeter validation logs isolate a specific shade Delta-E reading drift outside target parameters.</p>
+<p class="text-slate-300">-> Tracking Point Diagnostics: Spectrophotometer matrix maps structural chemistry balance adjustment requirements prior to finishing steps.</p>
+<p class="text-emerald-400 font-bold mt-2">// Automated System Tracking Actions Generated:</p>
+<p class="text-slate-200">   1. Central queue pipeline applies a data hold command parameter to subsequent loading blocks.<br>
+   2. Computes precise topping compound calculation layouts directly using active color sensor arrays.<br>
+   3. Re-routes secondary open batch tickets to clear line layouts first, preserving structural component feed consistency.</p>
                     `;
                 } else if (type === 'transit') {
                     report = `
-<p class="text-amber-600 font-bold">[EXCEPTION CAPTURED] -> ROUTING NODE: FLEET ID 882</p>
-<p class="text-slate-700"><span class="font-bold text-[#0B2341]">Parameter Check:</span> Integrated transport logistics tracking metrics record stationary location metrics outside standard parameters.</p>
-<p class="text-slate-600"><span class="font-bold text-[#0B2341]">Variable Isolated:</span> Local regional artery movement constraints affecting active delivery schedules.</p>
-<p class="text-blue-700 font-bold mt-2">// System Tracking Output Actions Summary:</p>
-<p class="text-slate-600">   1. Packing floor data blocks automatically balance staging parameters to prioritize available warehouse stocks.<br>
-   2. Formats tracking adjustments to utilize secondary transport connection loops seamlessly.<br>
-   3. Syncs updated delivery arrival windows down to explicit inventory SKU levels to maintain clean target visibility.</p>
+<p class="text-amber-400 font-bold">[METRIC THRESHOLD EXCEPTION RECORDED] // TRANSPORT LOGISTICS: REGIONAL ROUTE ARTERY</p>
+<p class="text-slate-300">-> Variance Parameters: Integrated fleet telemetry tracks an unexpected stationary transit delay window.</p>
+<p class="text-slate-300">-> Tracking Point Diagnostics: Route monitoring systems log external logistics infrastructure constraints affecting raw delivery schedules.</p>
+<p class="text-emerald-400 font-bold mt-2">// Automated System Tracking Actions Generated:</p>
+<p class="text-slate-200">   1. Staging workflows dynamically adjust layer priority fields to favor ready warehouse stocks.<br>
+   2. Switches active fleet manifest tracking fields to secondary transport routing alternatives.<br>
+   3. Updates arrival timeline forecasts down to exact stock container items to maintain complete pipeline visibility.</p>
                     `;
                 }
                 term.innerHTML = report;
@@ -553,28 +583,43 @@
         }
 
 
-        // --- SIMULATION 3 ENGINE: DETERMINISTIC LINE CHARTING ---
+        // --- SIMULATION 03 ENGINE: DYNAMIC CHART RUNTIME ---
         const ctx = document.getElementById('learningCurveChart').getContext('2d');
         let learningChart;
 
         const labels = Array.from({length: 20}, (_, i) => `Day ${i + 1}`);
-        const baselineData = [25, 30, 35, 38, 42, 45, 48, 50, 53, 55, 58, 60, 62, 65, 67, 69, 71, 73, 74, 75];
-        const automatedSOPData = [25, 38, 48, 55, 62, 68, 72, 75, 77, 79, 80, 81, 82, 82, 83, 83, 84, 84, 85, 85];
+        const baselineBase = [25, 30, 35, 38, 42, 45, 48, 50, 53, 55, 58, 60, 62, 65, 67, 69, 71, 73, 74, 75];
+        const sopBase = [25, 38, 48, 55, 62, 68, 72, 75, 77, 79, 80, 81, 82, 82, 83, 83, 84, 84, 85, 85];
 
         function renderChart() {
             const useSOP = document.getElementById('sopCheckbox').checked;
+            const complexity = parseFloat(document.getElementById('complexitySelect').value);
+            const skillFactor = parseInt(document.getElementById('skillSlider').value) / 75;
             
-            document.getElementById('daysToTarget').innerText = useSOP ? "8 Days" : "20 Days";
-            document.getElementById('efficiencyDelta').innerText = useSOP ? "+18% over Baseline" : "0% (Standard Variance)";
-            document.getElementById('efficiencyDelta').className = useSOP ? "text-emerald-600 font-bold" : "text-slate-500 font-bold";
+            document.getElementById('skillVal').innerText = `${document.getElementById('skillSlider').value}% Skilled`;
 
-            if (learningChart) {
-                learningChart.destroy();
+            // Dynamic algorithmic line parsing based on complexity and skill parameters
+            const dynamicBaseline = baselineBase.map(v => Math.min(90, Math.round(v * skillFactor / complexity)));
+            const dynamicSOP = sopBase.map(v => Math.min(90, Math.round(v * Math.sqrt(skillFactor) / Math.sqrt(complexity))));
+
+            let dayToTarget = 20;
+            for (let i = 0; i < dynamicSOP.length; i++) {
+                if (dynamicSOP[i] >= 70) { dayToTarget = i + 1; break; }
             }
 
+            const baseEnd = dynamicBaseline[dynamicBaseline.length - 1];
+            const sopEnd = dynamicSOP[dynamicSOP.length - 1];
+            const varianceDelta = useSOP ? (sopEnd - baseEnd) : 0;
+
+            document.getElementById('daysToTarget').innerText = useSOP ? `${dayToTarget} Days` : "20 Days";
+            document.getElementById('efficiencyDelta').innerText = useSOP ? `+${varianceDelta}% over Baseline` : "0% (Standard Pace)";
+            document.getElementById('efficiencyDelta').className = useSOP ? "text-emerald-600 font-bold" : "text-slate-500 font-bold";
+
+            if (learningChart) { learningChart.destroy(); }
+
             const datasets = [{
-                label: 'Standard Learning Pace (Unstructured Guideline Formats)',
-                data: baselineData,
+                label: 'Baseline Onboarding Curve (Unstructured Guidelines)',
+                data: dynamicBaseline,
                 borderColor: 'rgba(148, 163, 184, 0.5)',
                 borderDash: [4, 4],
                 backgroundColor: 'transparent',
@@ -584,10 +629,10 @@
 
             if (useSOP) {
                 datasets.push({
-                    label: 'Standardized Learning Pace (Structured Media SOP Implementation)',
-                    data: automatedSOPData,
-                    borderColor: '#0066CC',
-                    backgroundColor: 'rgba(0, 102, 204, 0.03)',
+                    label: 'Optimized Curve (Structured Media SOP Implementation)',
+                    data: dynamicSOP,
+                    borderColor: '#0056B3',
+                    backgroundColor: 'rgba(0, 86, 179, 0.03)',
                     fill: true,
                     tension: 0.15,
                     borderWidth: 2.5
@@ -611,8 +656,8 @@
                             grid: { color: 'rgba(0, 0, 0, 0.05)' },
                             ticks: { color: '#64748b', callback: value => `${value}%` },
                             title: { display: true, text: 'Assembly Run Efficiency (OEE %)', color: '#475569', font: { family: 'monospace', size: 10 } },
-                            min: 20,
-                            max: 90
+                            min: 15,
+                            max: 95
                         },
                         x: {
                             grid: { display: false },
@@ -624,8 +669,9 @@
         }
 
         document.getElementById('sopCheckbox').addEventListener('change', renderChart);
+        document.getElementById('complexitySelect').addEventListener('change', renderChart);
+        document.getElementById('skillSlider').addEventListener('input', renderChart);
 
-        // INITIAL ATTACHMENT TRIGGERS
         window.onload = () => {
             updateSimulationOne();
             renderChart();
