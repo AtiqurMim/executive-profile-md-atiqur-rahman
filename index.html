@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Md. Atiqur Rahman | Executive Portfolio & Production Systems Optimization</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- Chart.js CDN -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         .gildan-navy { color: #0B2341; }
@@ -20,16 +18,13 @@
 </head>
 <body class="bg-[#F8FAFC] text-slate-800 font-sans antialiased min-h-screen flex flex-col">
 
-    <!-- Header Block (Centrally Aligned mapping to image_166a9f.png requirements) -->
-    <header class="w-full px-4 sm:px-6 pt-12 pb-4 bg-white border-b border-slate-200">
+    <header class="w-full px-4 sm:px-6 pt-8 sm:pt-12 pb-4 bg-white border-b border-slate-200">
         <div class="max-w-4xl mx-auto flex flex-col items-center text-center space-y-4">
             
-            <!-- Executive Identity Area -->
-            <h1 class="text-3xl sm:text-4xl font-black text-[#0B2341] tracking-tight">MD. ATIQUR RAHMAN</h1>
-            <h2 class="text-xs sm:text-sm text-[#0056B3] font-bold tracking-wider uppercase">OPERATIONS TECHNOLOGY & PRODUCTION SYSTEMS MANAGER</h2>
+            <h1 class="text-2xl sm:text-3xl md:text-4xl font-black text-[#0B2341] tracking-tight unique-title">MD. ATIQUR RAHMAN</h1>
+            <h2 class="text-[10px] sm:text-xs md:text-sm text-[#0056B3] font-bold tracking-wider uppercase px-2">OPERATIONS TECHNOLOGY & PRODUCTION SYSTEMS MANAGER</h2>
             
-            <!-- Dash-Bordered Key Performance Box Row -->
-            <div class="border border-dashed border-slate-300 rounded-lg p-3 inline-flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-slate-600 bg-[#F8FAFC]">
+            <div class="border border-dashed border-slate-300 rounded-lg p-3 flex flex-col sm:flex-row flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-slate-600 bg-[#F8FAFC] w-full sm:w-auto">
                 <div><span class="text-[#0B2341] font-black font-mono">$5.93M</span> Cumulative Revenue</div>
                 <div class="text-slate-300 hidden sm:inline">|</div>
                 <div><span class="text-[#0B2341] font-black font-mono">4+ Yrs</span> Operations Leadership</div>
@@ -37,56 +32,50 @@
                 <div><span class="text-[#0B2341] font-black font-mono">15+</span> Scientific Publications</div>
             </div>
 
-            <!-- Contact & System Action Command Row -->
-            <div class="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4 w-full text-xs font-mono border-b border-slate-100 pb-6">
-                <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
-                    <a href="mailto:atiqur.rahman.mim@gmail.com" class="text-slate-600 hover:text-[#0056B3] transition">✉ atiqur.rahman.mim@gmail.com</a>
-                    <span class="text-slate-300">|</span>
-                    <a href="https://wa.me/8801716897917" target="_blank" class="text-emerald-600 hover:text-emerald-700 font-bold transition flex items-center gap-1">
+            <div class="pt-2 flex flex-col lg:flex-row items-center justify-center gap-4 w-full text-xs font-mono border-b border-slate-100 pb-6">
+                <div class="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-x-4 gap-y-2 text-center">
+                    <a href="mailto:atiqur.rahman.mim@gmail.com" class="text-slate-600 hover:text-[#0056B3] transition break-all px-2">✉ atiqur.rahman.mim@gmail.com</a>
+                    <span class="text-slate-300 hidden md:inline">|</span>
+                    <a href="https://wa.me/8801716897917" target="_blank" class="text-emerald-600 hover:text-emerald-700 font-bold transition flex items-center justify-center gap-1">
                         ☏ +8801716897917 <span class="text-[10px] font-normal text-slate-400">(WhatsApp / Cell)</span>
                     </a>
-                    <span class="text-slate-300">|</span>
+                    <span class="text-slate-300 hidden md:inline">|</span>
                     <span class="text-slate-500">📍 Dinajpur, Bangladesh</span>
                 </div>
 
-                <div class="flex items-center gap-3 mt-2 sm:mt-0">
-                    <button onclick="sharePortfolioLink()" class="flex items-center gap-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 px-3 py-1.5 rounded border border-slate-300 transition cursor-pointer relative active:scale-95 text-[11px]">
+                <div class="flex items-center justify-center gap-3 mt-2 lg:mt-0 w-full sm:w-auto">
+                    <button onclick="sharePortfolioLink()" class="flex-1 sm:flex-none flex items-center justify-center gap-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 px-3 py-2 sm:py-1.5 rounded border border-slate-300 transition cursor-pointer relative active:scale-95 text-[11px] min-h-[38px] sm:min-h-0">
                         <span>Share Link</span>
                         <span id="shareAlert" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-[#0B2341] text-white text-[9px] px-2 py-0.5 rounded shadow-md hidden">Copied!</span>
                     </button>
-                    <a href="Md_Atiqur_Rahman_CV.pdf" download="Md_Atiqur_Rahman_CV.pdf" class="flex items-center gap-1.5 bg-[#0056B3] hover:bg-blue-700 text-white px-3 py-1.5 rounded font-bold transition shadow-xs active:scale-95 text-[11px]">
-                        📥 Download CV Option
+                    <a href="Md_Atiqur_Rahman_CV.pdf" download="Md_Atiqur_Rahman_CV.pdf" class="flex-1 sm:flex-none flex items-center justify-center gap-1.5 bg-[#0056B3] hover:bg-blue-700 text-white px-3 py-2 sm:py-1.5 rounded font-bold transition shadow-xs active:scale-95 text-[11px] min-h-[38px] sm:min-h-0 text-center">
+                        📥 Download CV
                     </a>
                 </div>
             </div>
 
-            <!-- Central Tab Component Swapper -->
-            <div class="flex font-mono text-xs sm:text-sm border-b border-slate-200 w-full justify-center pt-2">
-                <button id="tabBtnCv" onclick="switchTab('cv')" class="px-6 py-3 transition duration-150 cursor-pointer tab-active tracking-wider uppercase">
+            <div class="flex font-mono text-[11px] sm:text-xs md:text-sm border-b border-slate-200 w-full justify-center pt-2">
+                <button id="tabBtnCv" onclick="switchTab('cv')" class="flex-1 sm:flex-none px-2 sm:px-6 py-3 transition duration-150 cursor-pointer tab-active tracking-wider uppercase text-center">
                     1. Interactive Executive CV
                 </button>
-                <button id="tabBtnAlignment" onclick="switchTab('alignment')" class="px-6 py-3 text-slate-500 hover:text-slate-800 transition duration-150 cursor-pointer tracking-wider uppercase">
-                    2. Strategic Alignment Cases
+                <button id="tabBtnAlignment" onclick="switchTab('alignment')" class="flex-1 sm:flex-none px-2 sm:px-6 py-3 text-slate-500 hover:text-slate-800 transition duration-150 cursor-pointer tracking-wider uppercase text-center">
+                    2. Strategic Alignment
                 </button>
             </div>
         </div>
     </header>
 
-    <!-- MAIN DASHBOARD CONTENT AREA -->
-    <main class="max-w-7xl mx-auto w-full px-4 sm:px-6 py-10 flex-grow">
+    <main class="max-w-7xl mx-auto w-full px-4 sm:px-6 py-6 sm:py-10 flex-grow">
 
-        <!-- ==================== TAB 1: INTERACTIVE EXECUTIVE CV ==================== -->
-        <div id="contentCv" class="space-y-10">
+        <div id="contentCv" class="space-y-8 sm:space-y-10">
             
-            <!-- Strategy Summary Card -->
-            <div class="bg-white border border-slate-200 p-6 sm:p-8 rounded-xl shadow-xs space-y-3">
+            <div class="bg-white border border-slate-200 p-5 sm:p-8 rounded-xl shadow-xs space-y-3">
                 <h3 class="text-xs font-mono text-[#0056B3] uppercase font-bold tracking-widest">// Operational Strategy Thesis</h3>
                 <p class="text-slate-700 leading-relaxed text-sm sm:text-base">
                     Large-scale corporate apparel manufacturing requires complete data synchronization between localized shop floors and central planning units. As an incoming Manufacturing Director stepping into a vertical operation, minimizing the lag between cutting, assembly, and tracking parameters is crucial. My technical background in Computer Science allows me to build stable tracking paths that reduce communication delays, prevent fulfillment bottlenecks, and optimize middle-management team bandwidth.
                 </p>
             </div>
 
-            <!-- Core Matrix Blocks -->
             <div class="space-y-4">
                 <h4 class="text-xs font-mono text-slate-400 uppercase tracking-wider font-bold">// Core Competencies Architecture</h4>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -109,15 +98,13 @@
                 </div>
             </div>
 
-            <!-- Experience Segments -->
             <div class="space-y-6">
                 <h4 class="text-xs font-mono text-slate-400 uppercase tracking-wider font-bold">// Documented Professional Experience Pipeline</h4>
-                <div class="space-y-8 border-l-2 border-slate-200 ml-2 pl-6">
+                <div class="space-y-6 border-l-2 border-slate-200 ml-3 pl-6 sm:pl-8 relative">
                     
-                    <!-- Item 1 -->
                     <div class="relative space-y-1.5 bg-white p-5 rounded-xl border border-slate-200 shadow-xs">
-                        <div class="absolute -left-[39px] top-6 w-3 h-3 rounded-full bg-[#0056B3] border-4 border-white"></div>
-                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                        <div class="absolute -left-[31px] sm:-left-[39px] top-6 w-3 h-3 rounded-full bg-[#0056B3] border-4 border-white"></div>
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                             <h5 class="text-base font-bold text-[#0B2341]">Production Lead</h5>
                             <span class="text-xs font-mono text-[#0056B3] bg-blue-50 px-2.5 py-0.5 rounded border border-blue-100 font-bold w-fit">May 2022 - Present</span>
                         </div>
@@ -131,10 +118,9 @@
                         </ul>
                     </div>
 
-                    <!-- Item 2 -->
                     <div class="relative space-y-1.5 bg-white p-5 rounded-xl border border-slate-200 shadow-xs">
-                        <div class="absolute -left-[39px] top-6 w-3 h-3 rounded-full bg-slate-400 border-4 border-white"></div>
-                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                        <div class="absolute -left-[31px] sm:-left-[39px] top-6 w-3 h-3 rounded-full bg-slate-400 border-4 border-white"></div>
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                             <h5 class="text-base font-bold text-[#0B2341]">Head of IT Department</h5>
                             <span class="text-xs font-mono text-slate-600 bg-slate-100 px-2 py-0.5 rounded border border-slate-200 w-fit">Mar 2019 - Jul 2022</span>
                         </div>
@@ -146,10 +132,9 @@
                         </ul>
                     </div>
 
-                    <!-- Item 3 -->
                     <div class="relative space-y-1.5 bg-white p-5 rounded-xl border border-slate-200 shadow-xs">
-                        <div class="absolute -left-[39px] top-6 w-3 h-3 rounded-full bg-slate-400 border-4 border-white"></div>
-                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                        <div class="absolute -left-[31px] sm:-left-[39px] top-6 w-3 h-3 rounded-full bg-slate-400 border-4 border-white"></div>
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                             <h5 class="text-base font-bold text-[#0B2341]">Head of Operations</h5>
                             <span class="text-xs font-mono text-slate-600 bg-slate-100 px-2 py-0.5 rounded border border-slate-200 w-fit">Jul 2017 - Feb 2019</span>
                         </div>
@@ -161,10 +146,9 @@
                         </ul>
                     </div>
 
-                    <!-- Item 4 -->
                     <div class="relative space-y-1.5 bg-white p-5 rounded-xl border border-slate-200 shadow-xs">
-                        <div class="absolute -left-[39px] top-6 w-3 h-3 rounded-full bg-slate-400 border-4 border-white"></div>
-                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                        <div class="absolute -left-[31px] sm:-left-[39px] top-6 w-3 h-3 rounded-full bg-slate-400 border-4 border-white"></div>
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                             <h4 class="text-base font-bold text-[#0B2341]">Coordinator - Operations & Networks</h4>
                             <span class="text-xs font-mono text-slate-600 bg-slate-100 px-2 py-0.5 rounded border border-slate-200 w-fit">Aug 2014 - Jul 2017</span>
                         </div>
@@ -177,9 +161,8 @@
                 </div>
             </div>
 
-            <!-- Double Bottom Blocks -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="p-6 bg-white border border-slate-200 rounded-xl space-y-4 shadow-xs">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:grid-cols-1 lg:grid-cols-2 lg:gap-8">
+                <div class="p-5 sm:p-6 bg-white border border-slate-200 rounded-xl space-y-4 shadow-xs">
                     <h4 class="text-xs font-mono text-[#0056B3] font-bold uppercase tracking-wider">// Formal Academic Framework</h4>
                     <div class="space-y-4 text-xs">
                         <div>
@@ -198,7 +181,7 @@
                     </div>
                 </div>
 
-                <div class="p-6 bg-white border border-slate-200 rounded-xl flex flex-col justify-between shadow-xs">
+                <div class="p-5 sm:p-6 bg-white border border-slate-200 rounded-xl flex flex-col justify-between shadow-xs space-y-4 lg:space-y-0">
                     <div>
                         <h4 class="text-xs font-mono text-[#0056B3] font-bold uppercase tracking-wider">// Scientific Publications Framework</h4>
                         <p class="text-xs text-slate-600 mt-2 leading-relaxed">
@@ -207,15 +190,15 @@
                     </div>
                     <div class="grid grid-cols-3 gap-2 pt-4 border-t border-slate-200 text-center font-mono">
                         <div class="bg-slate-50 p-2 rounded border border-slate-200">
-                            <div class="text-base font-black text-slate-800">312</div>
+                            <div class="text-sm sm:text-base font-black text-slate-800">312</div>
                             <div class="text-[9px] text-slate-400 font-bold uppercase">Citations</div>
                         </div>
                         <div class="bg-slate-50 p-2 rounded border border-slate-200">
-                            <div class="text-base font-black text-blue-600">10</div>
+                            <div class="text-sm sm:text-base font-black text-blue-600">10</div>
                             <div class="text-[9px] text-slate-400 font-bold uppercase">h-index</div>
                         </div>
                         <div class="bg-slate-50 p-2 rounded border border-slate-200">
-                            <div class="text-base font-black text-sky-600">10</div>
+                            <div class="text-sm sm:text-base font-black text-sky-600">10</div>
                             <div class="text-[9px] text-slate-400 font-bold uppercase">i10-index</div>
                         </div>
                     </div>
@@ -224,20 +207,17 @@
 
         </div>
 
-        <!-- ==================== TAB 2: STRATEGIC ALIGNMENT CASES ==================== -->
-        <div id="contentAlignment" class="space-y-12 hidden">
+        <div id="contentAlignment" class="space-y-10 sm:space-y-12 hidden">
             
-            <!-- SIMULATION 1: PRODUCTION BUFFER MAPPER WITH EXTENDED PARAMETERS -->
-            <section class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-xs">
+            <section class="bg-white border border-slate-200 rounded-2xl p-5 sm:p-8 shadow-xs">
                 <div class="border-b border-slate-200 pb-4 mb-6">
                     <span class="text-xs font-mono text-[#0056B3] uppercase tracking-wider font-bold">Simulation 01 // Vertical Integration Flow Controls</span>
-                    <h3 class="text-xl font-bold text-[#0B2341] mt-1">Dyeing-to-Sewing Balance Engine</h3>
+                    <h3 class="text-lg sm:text-xl font-bold text-[#0B2341] mt-1">Dyeing-to-Sewing Balance Engine</h3>
                     <p class="text-xs text-slate-600 mt-1">Model the precise impact of processing or utility constraints on sewing layouts using realistic volume and targets.</p>
                 </div>
 
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                    <!-- Controls Column -->
-                    <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 space-y-5">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
+                    <div class="bg-slate-50 p-4 sm:p-5 rounded-xl border border-slate-200 space-y-5">
                         <h4 class="text-xs font-mono text-slate-500 uppercase font-bold">// Production Metrics Inputs</h4>
                         
                         <div>
@@ -273,14 +253,13 @@
                         </div>
 
                         <div class="pt-3 border-t border-slate-200">
-                            <button id="mitigateBtn" class="w-full bg-[#0056B3] hover:bg-blue-700 text-white font-mono text-xs py-2.5 px-4 rounded transition shadow-xs font-bold cursor-pointer active:scale-98">
+                            <button id="mitigateBtn" class="w-full bg-[#0056B3] hover:bg-blue-700 text-white font-mono text-xs py-3 px-4 rounded transition shadow-xs font-bold cursor-pointer active:scale-98 min-h-[44px]">
                                 Deploy Dynamic PPC Re-Routing Logic
                             </button>
                         </div>
                     </div>
 
-                    <!-- Output Panel -->
-                    <div class="lg:col-span-2 flex flex-col justify-between bg-white border border-slate-200 p-5 rounded-xl">
+                    <div class="lg:col-span-2 flex flex-col justify-between bg-white border border-slate-200 p-4 sm:p-5 rounded-xl space-y-4 lg:space-y-0">
                         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
                             <div class="bg-slate-50 p-3 rounded border border-slate-200">
                                 <span class="text-[10px] text-slate-400 font-mono block font-bold uppercase">Layout Risk Level</span>
@@ -298,33 +277,31 @@
 
                         <div class="mt-4 bg-slate-900 p-4 rounded border border-slate-800 font-mono text-[11px] text-slate-300">
                             <span class="text-slate-500 block border-b border-slate-800 pb-1 mb-1.5">// Mathematical Continuity Outputs:</span>
-                            <p id="simulationLog">Modify the sliding controls on the left to verify active metric balances across vertical layers.</p>
+                            <p id="simulationLog" class="leading-relaxed">Modify the sliding controls on the left to verify active metric balances across vertical layers.</p>
                         </div>
                     </div>
                 </div>
             </section>
 
 
-            <!-- SIMULATION 2: ADVANCED ACTIVE TABULAR FILTER INTERFACE -->
-            <section class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-xs">
+            <section class="bg-white border border-slate-200 rounded-2xl p-5 sm:p-8 shadow-xs">
                 <div class="border-b border-slate-200 pb-4 mb-6">
                     <span class="text-xs font-mono text-[#0056B3] uppercase tracking-wider font-bold">Simulation 02 // Analytics Optimization</span>
-                    <h3 class="text-xl font-bold text-[#0B2341] mt-1">Shop-Floor Exception Parameter Logger</h3>
+                    <h3 class="text-lg sm:text-xl font-bold text-[#0B2341] mt-1">Shop-Floor Exception Parameter Logger</h3>
                     <p class="text-xs text-slate-600 mt-1">Simulate actionable alert sorting. Select a specific operational exception parameter to output structured analytics dashboards.</p>
                 </div>
 
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                    <!-- Action List -->
-                    <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 flex flex-col justify-between">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
+                    <div class="bg-slate-50 p-4 sm:p-5 rounded-xl border border-slate-200 flex flex-col justify-between">
                         <div class="space-y-2">
                             <h4 class="text-xs font-mono text-slate-400 uppercase font-bold mb-2">// Select Active Alert Parameter</h4>
-                            <button onclick="generateBrief('efficiency')" class="w-full text-left bg-white hover:bg-slate-100 p-3 rounded border border-slate-200 text-xs font-mono transition cursor-pointer font-bold text-slate-700 shadow-2xs">
+                            <button onclick="generateBrief('efficiency')" class="w-full text-left bg-white hover:bg-slate-100 p-3 rounded border border-slate-200 text-xs font-mono transition cursor-pointer font-bold text-slate-700 shadow-2xs min-h-[44px]">
                                 📊 OEE Variance Alert (Target Limit &lt;45%)
                             </button>
-                            <button onclick="generateBrief('shade')" class="w-full text-left bg-white hover:bg-slate-100 p-3 rounded border border-slate-200 text-xs font-mono transition cursor-pointer font-bold text-slate-700 shadow-2xs">
+                            <button onclick="generateBrief('shade')" class="w-full text-left bg-white hover:bg-slate-100 p-3 rounded border border-slate-200 text-xs font-mono transition cursor-pointer font-bold text-slate-700 shadow-2xs min-h-[44px]">
                                 🧪 Material Shade Drift Boundary Exception
                             </button>
-                            <button onclick="generateBrief('transit')" class="w-full text-left bg-white hover:bg-slate-100 p-3 rounded border border-slate-200 text-xs font-mono transition cursor-pointer font-bold text-slate-700 shadow-2xs">
+                            <button onclick="generateBrief('transit')" class="w-full text-left bg-white hover:bg-slate-100 p-3 rounded border border-slate-200 text-xs font-mono transition cursor-pointer font-bold text-slate-700 shadow-2xs min-h-[44px]">
                                 🚛 Logistics Supply Route Variance Log
                             </button>
                         </div>
@@ -333,13 +310,12 @@
                         </p>
                     </div>
 
-                    <!-- Extended Output Interface -->
                     <div class="lg:col-span-2 bg-[#0B2341] text-white rounded-xl p-5 font-mono text-[11px] min-h-[250px] flex flex-col justify-between border border-slate-900 shadow-md">
-                        <div class="border-b border-slate-800 pb-2 mb-2 flex items-center justify-between text-slate-400 text-[10px]">
+                        <div class="border-b border-slate-800 pb-2 mb-2 flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-slate-400 text-[10px]">
                             <span>DASHBOARD METRIC CONTAINER: parsing_engine_v2.out</span>
                             <span class="text-emerald-400 font-bold">STATUS: RUNNING</span>
                         </div>
-                        <div class="space-y-2 flex-grow pt-1 text-slate-200" id="terminalOutput">
+                        <div class="space-y-2 flex-grow pt-1 text-slate-200 overflow-x-auto" id="terminalOutput">
                             <p class="text-slate-400 italic">// Choose an evaluation log button from the configuration panel to output precise parameter blocks...</p>
                         </div>
                     </div>
@@ -347,22 +323,20 @@
             </section>
 
 
-            <!-- SIMULATION 3: COMPLEXITY-BASED LEARNING CURVE OPTIMIZER -->
-            <section class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-xs">
+            <section class="bg-white border border-slate-200 rounded-2xl p-5 sm:p-8 shadow-xs">
                 <div class="border-b border-slate-200 pb-4 mb-6">
                     <span class="text-xs font-mono text-[#0056B3] uppercase tracking-wider font-bold">Simulation 03 // Balancing Optimization Models</span>
-                    <h3 class="text-xl font-bold text-[#0B2341] mt-1">SOP Ramp-Up Parameter Predictor</h3>
+                    <h3 class="text-lg sm:text-xl font-bold text-[#0B2341] mt-1">SOP Ramp-Up Parameter Predictor</h3>
                     <p class="text-xs text-slate-600 mt-1">Model efficiency progression lines by balancing operator onboarding across variable style complex profiles.</p>
                 </div>
 
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                    <!-- Expanded Parameter Form Box -->
-                    <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 space-y-4">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
+                    <div class="bg-slate-50 p-4 sm:p-5 rounded-xl border border-slate-200 space-y-4">
                         <h4 class="text-xs font-mono text-slate-400 uppercase font-bold">// Curve Parameters</h4>
                         
                         <div class="p-3 bg-white rounded border border-slate-200 shadow-2xs">
                             <label class="flex items-start gap-3 cursor-pointer">
-                                <input type="checkbox" id="sopCheckbox" checked class="mt-1 w-4 h-4 rounded border-slate-300 text-[#0056B3] focus:ring-blue-500">
+                                <input type="checkbox" id="sopCheckbox" checked class="mt-1 w-4 h-4 rounded border-slate-300 text-[#0056B3] focus:ring-blue-500 min-w-[16px]">
                                 <div>
                                     <span class="text-xs font-bold text-slate-700 block">Deploy Media SOP Assemblies</span>
                                     <span class="text-[11px] text-slate-500 block mt-0.5">Integrates clear visual steps (Notion/Loom controls) to standardize run paths.</span>
@@ -372,7 +346,7 @@
 
                         <div>
                             <label class="block text-xs font-bold text-slate-600 mb-1">Batch Style Complexity</label>
-                            <select id="complexitySelect" class="w-full bg-white border border-slate-200 rounded p-2 text-xs font-mono text-slate-700 outline-none">
+                            <select id="complexitySelect" class="w-full bg-white border border-slate-200 rounded p-2 text-xs font-mono text-slate-700 outline-none min-h-[40px]">
                                 <option value="1.0">Basic Jersey Tops (Standard)</option>
                                 <option value="1.25" selected>Semi-Engineered Technical Wear</option>
                                 <option value="1.5">Fully Engineered Performance Wear</option>
@@ -392,16 +366,15 @@
                                 <span>Days to Efficiency Target:</span>
                                 <span id="daysToTarget" class="text-[#0056B3] font-bold">14 Days</span>
                             </div>
-                            <div class="flex justify-between">
+                            <div class="flex justify-between gap-2">
                                 <span>Variance Shift:</span>
-                                <span id="efficiencyDelta" class="text-emerald-600 font-bold">+18% vs Baseline</span>
+                                <span id="efficiencyDelta" class="text-emerald-600 font-bold text-right">+18% vs Baseline</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Chart Grid Wrapper Box -->
-                    <div class="lg:col-span-2 bg-white border border-slate-200 p-4 rounded-xl flex items-center justify-center min-h-[300px]">
-                        <div class="w-full h-64 sm:h-72 relative">
+                    <div class="lg:col-span-2 bg-white border border-slate-200 p-2 sm:p-4 rounded-xl flex items-center justify-center min-h-[280px] sm:min-h-[320px]">
+                        <div class="w-full h-60 sm:h-72 relative">
                             <canvas id="learningCurveChart"></canvas>
                         </div>
                     </div>
@@ -412,11 +385,10 @@
 
     </main>
 
-    <footer class="border-t border-slate-200 bg-white py-6 px-6 text-center text-xs font-mono text-slate-400">
+    <footer class="border-t border-slate-200 bg-white py-6 px-4 text-center text-xs font-mono text-slate-400">
         Operational Analysis Layout Framework // Md. Atiqur Rahman // 2026
     </footer>
 
-    <!-- RUNTIME LOGIC CODE ENGINE -->
     <script>
         // --- DATA VISIBILITY ACTION SYSTEMS ---
         function sharePortfolioLink() {
@@ -428,7 +400,7 @@
             const alertBox = document.getElementById('shareAlert');
 
             if (navigator.share) {
-                navigator.share(shareData).catch((err) => console.log(shareError));
+                navigator.share(shareData).catch((err) => console.log(err));
             } else {
                 navigator.clipboard.writeText(window.location.href)
                     .then(() => {
@@ -501,7 +473,6 @@
                 logMsg = `[OK] Pre-staged material inventory safety levels (${hoursOfBuffer} hours) successfully covered the calculated ${outage}-hour processing delay. Production run layout metrics remain balanced.`;
             } else {
                 totalDelayHours = effectiveOutage - hoursOfBuffer;
-                // Risk maps directly to volume capacity, target efficiency, and delay duration
                 financialRisk = Math.round((volume / 24) * totalDelayHours * (oeeTarget / 100) * 14.5);
                 
                 if (totalDelayHours > 6) {
@@ -540,7 +511,7 @@
         oeeTargetSlider.addEventListener('input', updateSimulationOne);
 
 
-        // --- SIMULATION 02 ENGINE: SORTING ALERTS LOGIC ---
+        // --- SIMULATION 02 ENGINE ---
         function generateBrief(type) {
             const term = document.getElementById('terminalOutput');
             term.innerHTML = '<p class="text-slate-400">// Querying dataset variables... Formatting target parameter outputs...</p>';
@@ -583,7 +554,7 @@
         }
 
 
-        // --- SIMULATION 03 ENGINE: DYNAMIC CHART RUNTIME ---
+        // --- SIMULATION 03 ENGINE ---
         const ctx = document.getElementById('learningCurveChart').getContext('2d');
         let learningChart;
 
@@ -598,7 +569,6 @@
             
             document.getElementById('skillVal').innerText = `${document.getElementById('skillSlider').value}% Skilled`;
 
-            // Dynamic algorithmic line parsing based on complexity and skill parameters
             const dynamicBaseline = baselineBase.map(v => Math.min(90, Math.round(v * skillFactor / complexity)));
             const dynamicSOP = sopBase.map(v => Math.min(90, Math.round(v * Math.sqrt(skillFactor) / Math.sqrt(complexity))));
 
@@ -618,7 +588,7 @@
             if (learningChart) { learningChart.destroy(); }
 
             const datasets = [{
-                label: 'Baseline Onboarding Curve (Unstructured Guidelines)',
+                label: 'Baseline Onboarding Curve',
                 data: dynamicBaseline,
                 borderColor: 'rgba(148, 163, 184, 0.5)',
                 borderDash: [4, 4],
@@ -629,7 +599,7 @@
 
             if (useSOP) {
                 datasets.push({
-                    label: 'Optimized Curve (Structured Media SOP Implementation)',
+                    label: 'Optimized Curve (Media SOP)',
                     data: dynamicSOP,
                     borderColor: '#0056B3',
                     backgroundColor: 'rgba(0, 86, 179, 0.03)',
@@ -655,7 +625,7 @@
                         y: {
                             grid: { color: 'rgba(0, 0, 0, 0.05)' },
                             ticks: { color: '#64748b', callback: value => `${value}%` },
-                            title: { display: true, text: 'Assembly Run Efficiency (OEE %)', color: '#475569', font: { family: 'monospace', size: 10 } },
+                            title: { display: true, text: 'OEE %', color: '#475569', font: { family: 'monospace', size: 10 } },
                             min: 15,
                             max: 95
                         },
